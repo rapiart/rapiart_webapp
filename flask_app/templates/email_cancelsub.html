@@ -1,0 +1,16 @@
+{% extends "email_base.html" %}
+{% block content %}
+<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 20px;">
+  Olá {{ current_user.username }},
+  <br><br>
+  Nossa sistema já processou seu pedido e o cancelamento da assinatura foi feito.
+  Saiba que você ainda pode usar nossa ferramenta até o final do período vigente do seu plano.<br>
+  Esperamos ter você de volta assim que for possível. Muito obrigado por esse tempo de parceria.
+</p>
+{% endblock content %}
+
+{% block buttons %}
+<a href="{{ url_for('users.account', _external=True) }}" style="font-size: 14px; font-family: Helvetica, Arial, sans-serif; text-decoration: none; border-radius: 4px; line-height: 20px; display: inline-block; font-weight: normal; white-space: nowrap; background-color: #6200f5ff; color: #ffffff; padding: 8px 12px; border: 1px solid #6200f5ff;">
+    Reativar assinatura
+</a>
+{% endblock buttons %}

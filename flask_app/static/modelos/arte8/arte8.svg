@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="800"
+   height="800"
+   viewBox="0 0 800.00001 800.00001"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.2 (1.0.2+r75+1)"
+   sodipodi:docname="arte8_new.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="604.15409"
+     inkscape:cy="717.29118"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1608"
+     inkscape:window-height="986"
+     inkscape:window-x="72"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:snap-page="true" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="opacity:0.754;fill:#def2f1;fill-opacity:1;stroke-width:0;stop-color:#000000"
+       id="rect4516"
+       width="800"
+       height="275.5405"
+       x="2.6702881e-05"
+       y="524.45947" />
+    <rect
+       style="fill:#008000;stroke-width:0;stop-color:#000000"
+       id="caixa_texto_site"
+       width="586.3775"
+       height="44.41087"
+       x="106.81118"
+       y="740.37097" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;line-height:1.25;font-family:Alphakind;-inkscape-font-specification:Alphakind;letter-spacing:-1px;word-spacing:0px"
+       x="113.72475"
+       y="327.8223"
+       id="text4520"><tspan
+         sodipodi:role="line"
+         id="tspan4518"
+         x="113.72475"
+         y="327.8223" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:36.8729px;line-height:1.25;font-family:Alphakind;-inkscape-font-specification:Alphakind;letter-spacing:0px;word-spacing:0px;fill:#808080;fill-opacity:1;stroke-width:0.999996"
+       x="162.42862"
+       y="772.43988"
+       id="texto_site"><tspan
+         sodipodi:role="line"
+         id="tspan4528"
+         x="162.42862"
+         y="772.43988"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Poppins;-inkscape-font-specification:Poppins;fill:#808080;fill-opacity:1;stroke-width:0.999996">www.seusiteaqui.com.br</tspan></text>
+    <rect
+       style="fill:#008000;stroke-width:0;stop-color:#000000"
+       id="caixa_imagem_logo"
+       width="463.85141"
+       height="192.02693"
+       x="168.07437"
+       y="535.4032" />
+  </g>
+</svg>

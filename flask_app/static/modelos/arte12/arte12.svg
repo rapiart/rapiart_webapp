@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="800"
+   height="800"
+   viewBox="0 0 800.00001 800.00001"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.2 (1.0.2+r75+1)"
+   sodipodi:docname="arte12.svg"
+   inkscape:export-filename="/home/gustavu92/Desktop/rapiart_app/flask_app/static/modelos/arte12/arte12_camada1.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect917"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="Use fill-rule evenodd on &lt;b&gt;fill and stroke&lt;/b&gt; dialog if no flatten result after convert clip to paths." />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath913">
+      <path
+         id="path915"
+         style="display:block;fill:#ffffff;fill-opacity:0.994751;stroke-width:5.15906"
+         d="m 848.08594,548.49219 c -25.95629,0 -46.85156,20.89723 -46.85156,46.85351 V 800.18359 H 532.73633 c -25.95629,0 -46.85352,20.89528 -46.85352,46.85157 v 69.93945 c 0,25.95628 20.89723,46.85351 46.85352,46.85351 h 395.20898 c 8.53336,0 16.51183,-2.27029 23.38867,-6.2246 h 16.18946 c 25.95628,0 46.85156,-20.89528 46.85156,-46.85157 V 595.3457 c 0,-25.95628 -20.89528,-46.85351 -46.85156,-46.85351 z" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.5"
+     inkscape:cx="458.22987"
+     inkscape:cy="156.59102"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1608"
+     inkscape:window-height="986"
+     inkscape:window-x="72"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:snap-page="true"
+     inkscape:snap-global="true" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#000000;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 620.33125,800 C 583.19289,740.33812 647.8158,608.2418 800,643.32144 V 800 Z"
+       id="path856"
+       sodipodi:nodetypes="cc" />
+    <rect
+       style="fill:#ffff00;stroke:none;stroke-width:1.0528"
+       id="caixa_texto_preconormal"
+       width="206.09871"
+       height="48.380444"
+       x="86.447739"
+       y="198.65298" />
+    <rect
+       style="fill:#008000;stroke-width:4.93553"
+       id="caixa_imagem_produto"
+       width="576.30176"
+       height="380.24692"
+       x="111.84912"
+       y="337.16751" />
+    <rect
+       style="fill:#008000;fill-opacity:1;stroke:none;stroke-width:2.05683"
+       id="caixa_texto_nomeproduto"
+       width="741.59753"
+       height="66.020691"
+       x="29.201233"
+       y="42.045414" />
+    <rect
+       style="fill:#ffff00;stroke:none;stroke-width:2.72232"
+       id="caixa_texto_precodesconto"
+       width="416.61475"
+       height="108.85922"
+       x="366.12469"
+       y="201.60733" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:53.3333px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.739098"
+       x="42.807701"
+       y="94.294266"
+       id="texto_nomeproduto"
+       transform="scale(1.0000497,0.99995031)"><title
+         id="title967">titulo_produto</title><tspan
+         sodipodi:role="line"
+         id="tspan1440"
+         x="42.807701"
+         y="94.294266"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.3333px;font-family:Gila;-inkscape-font-specification:Gila;fill:#ffffff;stroke-width:0.739098">TITULO DO PRODUTO AQUI</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:44.127px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.827386"
+       x="88.536087"
+       y="235.44792"
+       id="texto_preconormal"
+       transform="scale(1.0000497,0.99995031)"><tspan
+         sodipodi:role="line"
+         id="tspan1471-2"
+         x="88.536087"
+         y="235.44792"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:44.127px;font-family:Poppins;-inkscape-font-specification:Poppins;fill:#ffffff;stroke-width:0.827386">R$199,99</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:90.6667px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.26208"
+       x="368.02991"
+       y="284.38916"
+       id="texto_precodesconto"
+       transform="scale(1.0000497,0.99995031)"><tspan
+         sodipodi:role="line"
+         id="tspan1471-2-0"
+         x="368.02991"
+         y="284.38916"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90.6667px;font-family:Poppins;-inkscape-font-specification:Poppins;fill:#ffffff;stroke-width:2.26208">R$139,99</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:37.3333px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.827386;"
+       x="65.984863"
+       y="184.13875"
+       id="texto_preco_normal-3"
+       transform="scale(1.0000497,0.99995031)"><tspan
+         sodipodi:role="line"
+         id="tspan1471-2-1"
+         x="65.984863"
+         y="184.13875"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.3333px;font-family:Poppins;-inkscape-font-specification:Poppins;fill:#ffffff;stroke-width:0.827386;">De:</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:42.6667px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.827386;"
+       x="344.68088"
+       y="185.98943"
+       id="texto_preco_normal-3-1"
+       transform="scale(1.0000497,0.99995031)"><tspan
+         sodipodi:role="line"
+         id="tspan1471-2-1-0"
+         x="344.68088"
+         y="185.98943"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:42.6667px;font-family:Poppins;-inkscape-font-specification:Poppins;fill:#ffffff;stroke-width:0.827386;">Por:</tspan></text>
+    <rect
+       style="fill:#008000;stroke-width:0.843"
+       id="caixa_texto_porcentagemdesconto"
+       width="136.98297"
+       height="46.669224"
+       x="651.11835"
+       y="693.53503" />
+    <g
+       id="g2226"
+       transform="matrix(0.5237828,-0.5237828,0.52378281,0.52378281,152.9091,967.07329)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:63.0696px;line-height:1.25;font-family:Chewy;-inkscape-font-specification:Chewy;letter-spacing:0px;word-spacing:0px;fill:#ee3dc7;fill-opacity:1;stroke:none;stroke-width:1.59162"
+       x="658.49115"
+       y="740.94653"
+       id="texto_porcentagemdesconto"
+       transform="scale(1.0000497,0.99995031)"><tspan
+         sodipodi:role="line"
+         id="tspan1235-2"
+         x="658.49115"
+         y="740.94653"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:63.0696px;font-family:Poppins;-inkscape-font-specification:Poppins;fill:#ffffff;fill-opacity:1;stroke-width:1.59162">77%</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:45.8949px;line-height:1.25;font-family:Chewy;-inkscape-font-specification:Chewy;letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:1.36964;"
+       x="704.83807"
+       y="771.72992"
+       id="off_text-6"
+       transform="scale(0.97745557,1.0230644)"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan1235-2-9-9"
+         x="704.83807"
+         y="771.72992"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:45.8949px;font-family:Poppins;-inkscape-font-specification:Poppins;fill:#ff0000;fill-opacity:1;stroke-width:1.36964;">off</tspan></text>
+  </g>
+</svg>

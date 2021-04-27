@@ -1,0 +1,15 @@
+{% extends "email_base.html" %}
+{% block content %}
+<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 20px;">
+  Olá!<br>
+  Recebemos seu contato. Retornaremos o mais rápido possível.
+  <br>
+  <br>
+  Dados recebidos:
+  <br>
+  <b>Nome:</b> {{ form_contact.name }}<br>
+  <b>Email:</b> {{ form_contact.email }}<br>
+  <b>Assunto:</b> {{ form_contact.subject }}<br>
+  {{ form_contact.message }}
+</p>
+{% endblock content%}

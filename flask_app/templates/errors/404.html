@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block head %}
+<link href="{{ url_for('static', filename='css/not_found.css') }}" rel="stylesheet">
+{% endblock head %}
+
+{% block content %}
+<div class="container-fluid text-center">
+  <img id="img-ilustracao" class="p-4" src="{{url_for('static', filename='imgs/ilustracoes/undraw_page_not_found.svg')}}" />
+  <h4 class="p-4" >Essa página não existe mais...</h4>
+  <a class="btn btn-lg btn-primary m-1 btn-ir-para" href="{{url_for('artes_e_telas.artes_finalizadas')}}" role="button">Ir Para Artes</a>
+</div>
+{% endblock content %}

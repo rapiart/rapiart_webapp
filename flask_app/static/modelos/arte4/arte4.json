@@ -1,0 +1,1 @@
+{"arte_num": 4, "num_camadas": 1, "num_cores": 1, "num_fontes": 1, "fontes_padrao": ["slackey"], "cores_padrao": ["#ffe181"], "camadas": [{"level": 0, "cor": 0, "tipo": "texto", "fonte": 0, "elementos": [{"id_elemento": "texto_mensagem"}]}], "svg": "static/modelos/arte4/arte4.svg"}

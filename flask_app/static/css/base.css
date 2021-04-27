@@ -1,0 +1,154 @@
+@import url('index.css');
+
+/* ------MAIN----------
+---------------------*/
+.app-base{
+  padding: 60px 0;
+}
+
+@media (max-width: 768px) {
+  .app-base{
+    padding: 20px 0;
+  }
+}
+
+/* ------TEXT----------
+---------------------*/
+body{
+  font-family: "Nunito", sans-serif !important;
+  text-decoration: none;
+  color: #202020;
+}
+
+h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: #012970;
+  letter-spacing: 1px;
+}
+
+h2, h3, h4, h5, h6{
+  font-weight: 600;
+}
+
+h2 {
+  margin: 15px 0 0 0;
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+.text-bold{
+  font-weight: 600;
+}
+
+.link-nav{
+  color: #4657f3;
+}
+
+.btn-general, .btn-general-2, .btn-general-cancel, .btn-general-sm, .btn-general-2-sm, .btn-general-cancel-sm{
+  background-color: #4154f1;
+  display: inline-block;
+  border-radius: 5px;
+  color: #ffffff;
+  transition: none;
+  font-weight: 600;
+  transition: 0.3s;
+  border: 1px solid #4154f1;
+  text-decoration: none;
+}
+.btn-general, .btn-general-2, .btn-general-cancel{
+  padding: 8px 20px 8px 20px;
+  font-size: 16px;
+}
+.btn-general-sm, .btn-general-2-sm, .btn-general-cancel-sm {
+  padding: 8px 16px 8px 16px;
+  font-size: 12px;
+}
+.btn-general-cancel, .btn-general-cancel-sm{
+  background-color: rgb(93, 97, 100);
+  border: 1px solid rgb(93, 97, 100);
+}
+.btn-general-2, .btn-general-2-sm{
+  background-color: #c13bc5;
+  border: 1px solid #c13bc5;
+}
+.btn-general:hover, .btn-general-sm:hover  {
+  background: #4f5ee4d7;;
+  color: #fff;
+}
+.btn-general-cancel:hover, .btn-general-cancel-sm:hover{
+  background-color: rgb(119, 123, 126);
+  border: 1px solid rgb(119, 123, 126);
+  color: #fff;
+}
+.btn-general-2:hover, .btn-general-2-sm:hover{
+  background-color: #c35ec7;
+  border: 1px solid #c35ec7;
+  color: #fff;
+}
+.btn-general:focus, .btn-general-2:focus, .btn-general-sm:focus,
+.btn-general-cancel:focus, .btn-general-cancel:focus {
+  outline: none;
+}
+.btn-general:disabled{
+  background-color: #8691f1;
+  border: 1px solid #8691f1;
+}
+
+.btn-remove_tela-sm, .btn-edit_tela-sm, .btn-copy_tela-sm {
+  width: 65px;
+  display: inline-block;
+  padding: 4px 8px 4px 8px;
+  border-radius: 5px;
+  color: #ffffff;
+  transition: none;
+  font-size: 12px;
+  font-weight: 600;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.btn-remove_tela-sm {
+  background-color: #ce2525;
+  border: 1px solid #ce2525;  
+}
+
+.btn-edit_tela-sm { 
+  background-color: #4153f1d7;
+  border: 1px solid #4153f1d7;
+}
+
+.btn-copy_tela-sm {
+  background-color: #c13bc5;
+  border: 1px solid #c13bc5;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h3{
+    font-size: 18px;
+  }
+  .alert-pad{
+    padding-top: 10px;
+  }
+  .alert{
+    padding: 5px
+  }
+  .text-box {
+    font-size: 95%;
+    margin: 2px;
+  }
+  .btn-general, .btn-general-2, .btn-general-cancel{
+    padding: 4px 16px 4px 16px;
+  }
+  .btn-general-sm, .btn-general-2-sm, .btn-general-cancel-sm {
+    padding: 4px 12px 4px 12px;
+    font-size: 10px;
+  }
+}

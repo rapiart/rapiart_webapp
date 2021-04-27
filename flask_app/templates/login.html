@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block head %}
+<link href="{{ url_for('static', filename='css/login.css') }}" rel="stylesheet">
+{% endblock head %}
+{% block content %}
+<div class="content-section">
+    <legend class="border-bottom mt-3 mb-4">Entrar</legend>            
+    <div class="login-form">
+        <div style="max-width: 600px;">
+            <form method="POST" action="">
+                {{ form.hidden_tag() }}
+                <fieldset class="form-group">
+                    <div class="mb-3">
+                        {{ form.email.label(class="form-control-label") }}
+                        {% if form.email.errors %}
+                            {{ form.email(class="form-control is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for error in form.email.errors %}
+                                    <span> {{ error }}</span>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            {{ form.email(class="form-control") }}
+                        {% endif %}
+                    </div>
+                    <div class="mb-3">
+                        {{ form.password.label(class="form-control-label") }}
+                        {% if form.password.errors %}
+                            {{ form.password(class="form-control is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for error in form.password.errors %}
+                                    <span> {{ error }}</span>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            {{ form.password(class="form-control") }}
+                        {% endif %}
+                    </div> 
+                    <div class="mb-3">
+                        {{ form.remember(class="form-check-input") }}
+                        {{ form.remember.label(class="form-check-label") }}
+                    </div>  
+                </fieldset>
+                <div class="text-center">
+                    {{ form.submit(class="btn-sm btn-general", style="width: 60%") }}
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</div>
+<div class="login-form">
+    <div class="border-top pt-3 text-center">
+        <p class="text-muted ml-2">
+            Esqueceu sua senha?<a href="{{ url_for('users.reset_request') }}"> Clique aqui</a>
+        </p>
+        <p class="text-muted">Não possui cadastro?</p>
+        <a class="btn-sm btn-general-2 ml-3" href="{{ url_for('users.register') }}">Registrar</a>
+    </div>
+</div>
+{% endblock content %}

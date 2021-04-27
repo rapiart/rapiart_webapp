@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="error">
+  <a href="#" class="btn btn-general" id="test-btn">TEST</a>
+</div>
+
+<script>
+test_btn = document.querySelector("#test-btn")
+test_btn.addEventListener('click', shareFile, false)
+
+async function shareFile(){
+  const blob = await fetch('https://storage.googleapis.com/rapiart_app/backgrounds_v2/imagens/entretenimento/3811010.jpeg').then(r => r.blob())
+  console.log(blob)
+  share(blob)
+}
+async function share(blob){
+  const data = {
+    files: [
+      new File([blob], 'image.png', {
+        type: blob.type,
+      }),
+    ],
+  };
+  try {
+    await navigator.share(data);
+  } catch (err) {
+    console.log("Navegador Incompativel")
+    //console.error(err.name, err.message);
+  }
+};
+</script>
+{% endblock content %}
+

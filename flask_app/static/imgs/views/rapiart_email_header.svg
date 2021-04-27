@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="383.57141"
+   height="61.42857"
+   viewBox="0 0 101.4866 16.252976"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.2 (1.0.2+r75+1)"
+   sodipodi:docname="rapiart_email_header.svg"
+   inkscape:export-filename="/home/gabrielschubert/Documents/scripts/rapiart_app/flask_app/static/imgs/views/rapiart_email_header.png"
+   inkscape:export-xdpi="10"
+   inkscape:export-ydpi="10">
+  <defs
+     id="defs2">
+    <rect
+       x="549.20721"
+       y="223.02397"
+       width="731.89777"
+       height="291.08228"
+       id="rect847" />
+    <linearGradient
+       id="linearGradient2289"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop2287" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient849"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop847" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient839"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#504700;stop-opacity:1;"
+         offset="0"
+         id="stop837" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="182.94065"
+     inkscape:cy="164.41959"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g1333"
+     showgrid="false"
+     showguides="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1163"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:document-rotation="0"
+     units="px"
+     lock-margins="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-1.6441987,-0.20788726)">
+    <g
+       id="layer1-7"
+       inkscape:label="Layer 1"
+       transform="matrix(0.19191073,0,0,0.19191073,32.437288,0.27174399)"
+       style="stroke:none">
+      <g
+         inkscape:export-ydpi="100.11"
+         inkscape:export-xdpi="100.11"
+         style="fill:#000000;fill-opacity:0;stroke:none"
+         transform="matrix(0.15215454,0,0,0.1649878,5.7294328,-28.074744)"
+         id="g156">
+        <path
+           id="path158"
+           style="fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:none;stroke-width:0.320766;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="M 0.977,204.509 H 1290.161 V 645.095 H 0.977 Z"
+           inkscape:connector-curvature="0" />
+      </g>
+      <g
+         transform="translate(0.11295337,-1.4635126)"
+         id="g1333"
+         style="stroke:none">
+        <text
+           y="60.642788"
+           x="17.304625"
+           inkscape:export-ydpi="100.11"
+           inkscape:export-xdpi="100.11"
+           id="text162"
+           style="font-variant:normal;font-weight:normal;font-size:65.7769px;font-family:Gitaluevo;-inkscape-font-specification:Gitaluevo;writing-mode:lr-tb;fill:#6200f5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.175405"><tspan
+             style="fill:#4154f1;fill-opacity:1;stroke:none;stroke-width:0.175405"
+             id="tspan160"
+             sodipodi:role="line"
+             y="60.642788"
+             x="17.304625 37.366577 68.150162 97.947098">rapi</tspan></text>
+        <text
+           y="60.642788"
+           x="109.99608"
+           inkscape:export-ydpi="100.11"
+           inkscape:export-xdpi="100.11"
+           id="text166"
+           style="font-variant:normal;font-weight:normal;font-size:65.7769px;font-family:Gitaluevo;-inkscape-font-specification:Gitaluevo;writing-mode:lr-tb;fill:#d800c6;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.175405"><tspan
+             style="stroke:none;stroke-width:0.175405"
+             id="tspan164"
+             sodipodi:role="line"
+             y="60.642788"
+             x="109.99608 149.98842 170.05038">Art</tspan></text>
+        <text
+           xml:space="preserve"
+           id="text845"
+           style="font-style:normal;font-weight:normal;font-size:55.1472px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect847);fill:#000000;fill-opacity:1;stroke:none;" />
+      </g>
+    </g>
+    <rect
+       style="opacity:0;fill:#050000;fill-opacity:1;stroke:none;stroke-width:0.405804;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2293"
+       width="101.4866"
+       height="16.252975"
+       x="1.6441987"
+       y="0.20788726"
+       inkscape:export-xdpi="100.11"
+       inkscape:export-ydpi="100.11" />
+  </g>
+</svg>

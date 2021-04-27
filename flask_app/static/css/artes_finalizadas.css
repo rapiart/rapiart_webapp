@@ -1,0 +1,157 @@
+.art-images {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.div-options-btn {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+.options-btn {
+    height: 35px;
+}
+
+.div-arte-parent{
+  height:auto;
+}
+.div-arte-title{
+    height: 25%;
+}
+
+.div-arte-saved{
+    height: auto;
+}
+
+.div-arte-tela-qty {
+    height: auto;
+}
+
+.div-artes{
+  height: auto;
+  overflow: hidden;
+}
+
+i {
+    float:right;
+    font-size: 20px;
+}
+
+.modal-input{
+  width: 100%;
+}
+
+.text-box{
+  font-size: 100%;
+}
+
+.div-compartilhar{
+  padding-bottom: 10px;
+  width: 270px;
+}
+
+.div-compartilhar .btn-sm{
+  width: 100%;
+  border-radius: 20px;
+}
+
+#div-nao-artes h4{
+  font-size: 20px;
+}
+
+.share-btn-container {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 15px;
+}
+
+.share-btn-container p{
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.share-btn-container a i {
+  font-size: 32px;
+}
+
+.share-btn-container a {
+  margin: 12px 7px;
+  transition: 500ms;
+}
+
+.share-btn-container a:hover {
+  transform: scale(1.2);
+}
+
+.share-btn-container .fa-facebook {
+  color: #3b5998;
+}
+
+.share-btn-container .fa-twitter {
+  color: #1da1f2;
+}
+
+.share-btn-container .fa-linkedin {
+  color: #0077b5;
+}
+
+.share-btn-container .fa-pinterest {
+  color: #bd081c;
+}
+
+.share-btn-container .fa-whatsapp {
+  color: #25d366;
+}
+
+.img-share{
+  max-width: 220px;
+  max-height: 220px;
+  width: auto;
+  height: auto;
+}
+
+.cards-fundos{
+  max-height: 250px;
+  height: auto;
+}
+
+.fundo-div{
+  min-width: 200px;
+  max-width: 250px;
+  max-height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
+
+#modal-download-image-div{
+  min-width: 300px;
+  max-width: 98%;
+  width: 100%;
+}
+
+/* xs */
+#img-ilustracao {
+    max-width: 40%;
+  }
+/* md */
+@media (max-width: 992px) {
+  #img-ilustracao {
+    max-width: 60%;
+  }
+}
+/* sm */
+@media (max-width: 768px) {
+  #img-ilustracao {
+    max-width: 100%;
+  }
+  .text-box {
+    font-size: 90%;
+    margin: 2px;
+  }
+  #div-nao-artes h4{
+    font-size: 16px;
+  }
+}

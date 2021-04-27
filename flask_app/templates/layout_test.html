@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block head %}
+<link href="{{ url_for('static', filename='css/layout_test.css') }}" rel="stylesheet">
+{% endblock head%}
+
+{% block content %}
+<main class="container">
+    <div class="container">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs device-small" role="tablist">
+          <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+          <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+          <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+        </ul>
+    
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active col col-xs-12 col-sm-4" id="home">...home...</div>
+          <div role="tabpanel" class="tab-pane col-xs-12 col-sm-4" id="profile">...profile...</div>
+          <div role="tabpanel" class="tab-pane col-xs-12 col-sm-4" id="messages">...messages...</div>
+        </div>
+               
+      </div> 
+</main>
+{% endblock content %}
+
+{% block footer %}
+{%endblock footer %}

@@ -1,0 +1,53 @@
+button:focus {
+    outline: none;
+}
+
+.tab-pane, .div-tabs{
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.dica{
+    font-size: 90%;
+    color: rgb(155, 155, 155);
+}
+
+.nav-link{
+    color: rgb(87, 87, 87);
+}
+
+.nav-link:hover{
+    color: #4154f1;
+}
+
+.div-plano{
+    max-width: 500px;
+    margin-bottom: 10px;
+}
+
+.dado-nome{
+    font-size: 20px;
+}
+
+.btn{
+    font-weight: 600;
+}
+@media screen and (max-width: 480px) {
+    .tab-link{
+        font-size: 90%;
+    }
+    .tab-pane, .div-tabs{
+        padding: 0;
+        margin: 0;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        width: 100%;
+    }
+    .nav-link{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}

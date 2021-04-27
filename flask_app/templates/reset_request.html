@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="content-section">
+    <legend class="border-bottom mt-3 mb-4">{{ title }}</legend>
+    <div style="max-width: 600px;">
+        <form method="POST" action="">
+            {{ form.hidden_tag() }}
+            <fieldset class="form-group">
+                    
+                <div class="mb-3">
+                    {{ form.email.label(class="form-control-label") }}
+                    {% if form.email.errors %}
+                        {{ form.email(class="form-control is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.email.errors %}
+                                <span> {{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.email(class="form-control") }}
+                    {% endif %}
+                </div>
+            </fieldset>
+            <div class="mb-3">
+                {{ form.submit(class="btn-sm btn-general me-2") }}
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock content %}

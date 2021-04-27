@@ -1,0 +1,256 @@
+{% extends "base.html" %}
+
+{% block head %}
+
+<link href="{{ url_for('static', filename='css/rascunhos.css') }}" rel="stylesheet">
+<script type="text/javascript">
+  arte = {{arte|tojson}}
+  telas = {{telas|tojson}}
+  audios = {{audios|tojson}}
+  var url_for_artes = new URL("{{url_for('artes_e_telas.artes_finalizadas', _external=True)}}");
+</script>
+{% endblock head %}
+
+{% block content %}
+<div class="row justify-content-around my-3">
+  <div class="col-auto mx-2 mb-0">
+    <h2>{{title}}</h2>
+  </div>
+  <hr>
+  <a class=btn-voltar role="button" onclick="window.location.href='{{ url_for('artes_e_telas.artes_finalizadas') }}';"><i class="fas fa-arrow-circle-left"></i> Voltar </a>
+  <!-- <div class="col-auto mx-2 mt-2 mb-0">
+    <input class="form-control" type="text" placeholder="Filtrar rascunhos..." aria-label="default input example">
+  </div> -->
+</div>
+<div id="div-artes" class="container-fluid">
+</div>
+{% endblock content %}
+
+{% block footer %}
+<script src="{{ url_for('static', filename='js/rascunhos.js') }}" type="text/javascript"></script>
+<script type="text/babel">
+
+function criarAcordeao(arte){
+  return(
+    <div className="my-2" key={"arte-" + arte.id}>
+      <h2>{arte.nome}</h2>
+      <div className="modal fade" id={'editName-' + arte.id} data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby={"staticBackdropLabel-"+ arte.id} aria-hidden="true">
+            <div className="modal-dialog modal-dialog-centered">
+                <div className="modal-content">
+                    <div className="modal-header">
+                        <h5 className="modal-title" id={"staticBackdropLabel-"+ arte.id}>Nome da Arte</h5>
+                        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div className="modal-body">
+                        <input className="modal-input"id={"novo-nome-"+ arte.id} type="text" defaultValue={arte.nome}/>
+                    </div>
+                    <div className="modal-footer">
+                        <button type="button" className="btn-general-cancel" data-bs-dismiss="modal">Cancelar</button>
+                        <button id={"btn-salvar-nome-" + arte.id} type="button" name={arte.id} data-bs-dismiss="modal" className="btn-general btn-salvar-nome">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div className="row justify-content-between">
+            <div className="col-auto">
+            </div>
+            <div className="col-auto">
+              <div className="dropdown">
+                <a className="btn-sm btn-general-2-sm me-2 dropdown-toggle mb-2 mx-3" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                Mais Opções
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a href="#" data-bs-toggle="modal" data-bs-target={'#editName-' + arte.id} title="Editar Nome" className="dropdown-item">Renomear</a></li>
+                  <li><a id={"btn-detele-arte" + arte.id} name={arte.id} href="#" className="dropdown-item btn-detele-arte">Excluir Arte</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="container-fluid">
+            <div className="accordion mb-2" id={"accordion-telas-" + arte.id}>
+              <div className="accordion-item">
+                <h2 className="accordion-header" id={"heading-telas-" + arte.id}>
+                  <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={"#collapse-telas-" + arte.id} aria-expanded="true" aria-controls={"collapse-telas-" + arte.id}>
+                    Telas
+                  </button>
+                </h2>
+                <div name={arte.id} id={"collapse-telas-" + arte.id} className="accordion-collapse collapse" aria-labelledby={"heading-telas-" + arte.id} data-bs-parent={"#accordion-telas-" + arte.id}>
+                  <div className="accordion-body">
+                    <div id={"telas-galery-"+ arte.id} className="row">
+
+                    </div>
+                    <div className="row">
+                      <div className="col text-center">
+                        <button id={"btn-add-tela-" + arte.id} name={arte.id} className="btn-general btn-add-tela">
+                          <i className="fas fa-plus-circle"></i>  Adicionar Tela
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="accordion-item">
+                <h2 className="accordion-header" id={"heading-conf-"+ arte.id}>
+                  <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={"#collapse-conf-"+ arte.id} aria-expanded="false" aria-controls={"collapse-conf-"+ arte.id}>
+                    Sons e Transições
+                  </button>
+                </h2>
+                <div name={arte.id} id={"collapse-conf-"+ arte.id} className="audio-collapse accordion-collapse collapse" aria-labelledby={"heading-conf-"+ arte.id} data-bs-parent={"#accordion-telas-" + arte.id}>
+                  <div className="accordion-body d-flex justify-content-center flex">
+                    <div className="audio-select">
+                        <ul id={"audio-selector-"+ arte.id}>
+                          {audios.map((audio) => <li id={"arte-" + arte.id + '-' + audio['id']} key={"arte-" + arte.id + '-' + audio['id']} name={arte.id} audio-id={audio.id} value={audio['caminho']}>{audio['nome']}</li>)}
+                        </ul>
+                    </div>
+                    <div className="line-break"></div>
+                    <div>
+                      <audio className="audio-player" id={"player-"+ arte.id} controls="controls" controlsList="nodownload">
+                        <source id={"mp3_src-"+ arte.id} src="" type="audio/mp3" />Your browser does not support the audio element.
+                      </audio>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="row justify-content-center">
+              <div className="col col-auto">
+                <div id={"animacao-loading-" + arte.id} className="loading">
+                  <span>Gerando Video...</span>
+                </div>
+              </div>
+            </div>
+            <div className="row justify-content-center">
+              <div id={"preview-btn-"+ arte.id} className="col text-center">
+                  <button id={"btn-generate-video-" + arte.id} name={arte.id} className="btn-general-2 btn-generate-video mt-3">
+                    <i className="fas fa-video"></i> Gerar Animação
+                  </button>
+              </div>
+            </div>
+            <div className="row justify-content-center">
+              <div id={"preview-btn-disable-"+ arte.id} className="col text-center">
+                <span className="d-inline-block" tabIndex="0">
+                  <div id='alert-tela-nao-salva' className="alert alert-warning m-1" role="alert">
+                  Todas as telas devem estar salvas para concluir a animação.
+                  </div>
+                  <button className="btn-general-2" type="button" disabled>Gerar Animação</button>
+                </span>
+              </div>
+            </div>
+            <div className="after-load" id={"after-load-"+ arte.id}>
+              <div className="row justify-content-center mt-2">
+                <div className="col-auto mx-2 mb-0 mt-2">
+                  <h2>Animação Pronta!</h2>
+                  </div>
+                <div className="line-break"></div>
+                <div id="col1-editar-conteudo" className="col-sm-12 col-lg-6 text-center my-3 align-self-center">
+                  <video id={"div-video-"+ arte.id} className="video-js-responsive-container video-js vjs-default-skin vjs-big-play-centered" controls preload="none" width="600" height="600" poster="" data-setup="{}">
+                  </video>
+                </div>
+                <div id="col2-editar-conteudo" className="col-sm-12 col-lg-6 text-center">
+                  <div id="col2-modelo-escolhido" className="col text-center ">                    
+                    <div className="alert alert-info mb-1 mt-3 p-1" role="alert">
+                      <h4 className="alert-heading">Gostou?</h4>
+                      <p>Baixe o video para compartilhar.</p>
+                      <a href="#" name={arte.id} id="btn-compartilhar" role="button" className="btn-sm btn-general btn-share mb-1 mr-3">
+                        <i className="fas fa-share-alt-square"></i> Compartilhar
+                      </a>
+                      <button type="button" onClick={() => {location.href="{{url_for('artes_e_telas.artes_finalizadas')}}"}} className="btn-sm btn-general-2 mb-1 mt-2 btn-share">
+                        <i className="fas fa-arrow-circle-left"></i> Galeria de artes
+                      </button>
+                    </div>
+                    <div className="alert alert-warning mb-1 mt-3 p-1 pb-3" role="alert">
+                      <h4 className="alert-heading">Ainda não Gostou?</h4>
+                      <p>Fique à vontade para modificar a arte e gerar a animação novamente.</p>
+                      <button type="button" onClick={() => {document.body.scrollTop=0;document.documentElement.scrollTop=0}} className="btn-sm btn-general-2 mb-1 mt-2">
+                        <i className="fas fa-edit"></i> Continuar editando
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+)}
+
+function renderizarAcordeao(arte){
+  const acordeao = criarAcordeao(arte);
+
+  ReactDOM.render(
+    acordeao,
+    document.getElementById('div-artes')
+  );
+}
+
+function createCard(tela, arteId){
+  return (
+      <div className="bg-white rounded shadow-sm">
+        <img src={tela['imagem_preview']} alt="" className="img-fluid card-img-top"></img>
+        <div className="px-2 pt-2 pb-1">
+          <a href="#" className="text-dark text-decoration-none">{tela['nome']}</a>
+          <p id="description" className="text-muted my-0 p-1">{tela['texto_nome_produto']}</p>
+          <div className="d-flex justify-content-center">
+            <ul className="list-inline m-0">
+              <li className="list-inline-item">
+                <button type="button" onClick={() => {location.href="{{url_for('artes_e_telas.editar_tela', tela_id='TELAID') | safe}}".replace("TELAID", tela['id'])}} className="btn-edit_tela-sm a-btn-slide-text" title="Editar tela">
+                <i className="fa fa-edit fa-lg"></i><br/>Editar</button>
+              </li>
+              <li className="list-inline-item">
+                <button type="button" name={arteId + '-' + tela['id']} className="btn-copy_tela-sm a-btn-slide-text copy-btn my-1" title="Copiar tela">
+                <i className="fa fa-copy fa-lg" name={arteId + '-' + tela['id']}></i><br/>Duplicar</button>
+              </li>
+              <li className="list-inline-item">
+                <button type="button" name={arteId + '-' + tela['id']} className="btn-remove_tela-sm  a-btn-slide-text del-btn" title="Excluir tela">
+                <i className="fa fa-remove fa-lg" name={arteId + '-' + tela['id']}></i><br/>Remover</button>
+              </li>
+            </ul>
+          </div>
+          <div className="d-flex justify-content-center mt-0">
+            <ul className="list-inline m-1">
+              <li className="list-inline-item">
+                <button type="button" name={arteId + '-' + tela['id']} direction='left' className="btn btn-secundary a-btn-slide-text move-btn" title="Mover para esquerda">
+                <i className="fa fa-arrow-left fa-2x" name={arteId + '-' + tela['id']}></i></button>
+              </li>
+              <li className="list-inline-item">
+                <button type="button" name={arteId + '-' + tela['id']} direction='right' className="btn btn-secundary a-btn-slide-text move-btn" title="Mover para direita">
+                <i className="fa fa-arrow-right fa-2x" name={arteId + '-' + tela['id']}></i></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  );
+}
+
+function renderCards(telas, arteId){
+  {
+    document.getElementById("after-load-" + arteId).style.display = 'none'
+    document.getElementById("preview-btn-" + arteId).style.display = 'none'
+    document.getElementById("preview-btn-disable-"+ arteId).style.display = 'block' 
+    if (telas.length > 0){
+      var todosGerados = true;
+      for (var i = 0; i < telas.length; i++) {
+        if (telas[i].preview_gerado == false){
+          todosGerados = false;
+        }
+      }
+      if (todosGerados == true){
+        document.getElementById("preview-btn-" + arteId).style.display = 'block'
+        document.getElementById("preview-btn-disable-"+ arteId).style.display = 'none'
+      }
+    }
+  }
+
+  const cards = telas.map((tela) =>
+    <div key={tela['id']} className="col-xl-3 col-lg-4 col-md-6 mb-4">
+    {createCard(tela, arteId)}
+    </div>
+  );
+  
+  ReactDOM.render(
+    cards,
+    document.getElementById("telas-galery-" + arteId)
+  );
+}
+</script>
+{% endblock footer %}

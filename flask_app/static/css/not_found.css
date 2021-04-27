@@ -1,0 +1,28 @@
+.btn-ir-para {
+  width: 280px;
+}
+
+
+/* xs */
+#img-ilustracao {
+  max-width: 90%;
+  height: auto;
+}
+/* sm */
+@media (min-width: 768px) {
+  #img-ilustracao {
+    max-width: 80%;
+  }
+}
+/* md */
+@media (min-width: 992px) {
+  #img-ilustracao {
+    max-width: 70%;
+  }
+}
+/* lg */
+@media (min-width: 1200px) {
+  #img-ilustracao {
+    max-width: 60%;
+  }
+}

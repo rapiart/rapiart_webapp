@@ -1,0 +1,1 @@
+{"arte_num": 2, "num_camadas": 2, "num_cores": 1, "num_fontes": 1, "fontes_padrao": ["coolvetica"], "cores_padrao": ["#f9d6ac"], "camadas": [{"level": 0, "cor": 0, "tipo": "texto", "fonte": 0, "elementos": [{"id_elemento": "texto_site"}]}, {"level": 1, "tipo": "imagem", "elementos": [{"id_elemento": "imagem_logo"}]}], "svg": "static/modelos/arte2/arte2.svg"}

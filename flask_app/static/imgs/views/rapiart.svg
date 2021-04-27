@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="600"
+   height="211"
+   viewBox="0 0 158.75 55.827085"
+   version="1.1"
+   id="svg1303"
+   inkscape:version="1.0.2 (1.0.2+r75+1)"
+   sodipodi:docname="rapiart.svg"
+   inkscape:export-filename="/home/gabrielschubert/Documents/scripts/rapiart_app/flask_app/static/imgs/views/rapiart_nobg.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <defs
+     id="defs1297" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.87799264"
+     inkscape:cx="207.83012"
+     inkscape:cy="-26.127976"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g1333"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1163"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     units="px" />
+  <metadata
+     id="metadata1300">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g1333"
+       transform="translate(0.11295337,-1.4635126)">
+      <rect
+         style="fill:none;fill-opacity:0;stroke:none;stroke-width:0.267844;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect838"
+         width="159.30003"
+         height="59.070892"
+         x="-1.0022819"
+         y="-0.35708764"
+         inkscape:export-xdpi="95.507935"
+         inkscape:export-ydpi="95.507935" />
+      <g
+         id="g921"
+         transform="matrix(0.88420201,0,0,0.89902622,-12.649537,-9.7080296)"
+         inkscape:export-xdpi="95.507935"
+         inkscape:export-ydpi="95.507935">
+        <g
+           id="g156"
+           transform="matrix(0.13612514,0,0,0.13985061,16.070455,-15.933909)"
+           style="fill:#000000;fill-opacity:0;stroke:none"
+           inkscape:export-xdpi="86.839996"
+           inkscape:export-ydpi="86.839996">
+          <path
+             d="M 0.977,204.509 H 1290.161 V 645.095 H 0.977 Z"
+             style="fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:none;stroke-width:0.320766;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="path158"
+             inkscape:connector-curvature="0" />
+        </g>
+        <text
+           style="font-variant:normal;font-weight:normal;font-size:65.7769px;font-family:Gitaluevo;-inkscape-font-specification:Gitaluevo;writing-mode:lr-tb;fill:#4154f1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.175405"
+           id="text162"
+           inkscape:export-xdpi="86.839996"
+           inkscape:export-ydpi="86.839996"
+           x="17.304625"
+           y="60.642788"><tspan
+             x="17.304625 37.366577 68.150162 97.947098"
+             y="60.642788"
+             sodipodi:role="line"
+             id="tspan160"
+             style="fill:#4154f1;fill-opacity:1;stroke-width:0.175405">rapi</tspan></text>
+        <text
+           style="font-variant:normal;font-weight:normal;font-size:65.7769px;font-family:Gitaluevo;-inkscape-font-specification:Gitaluevo;writing-mode:lr-tb;fill:#d800c6;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.175405"
+           id="text166"
+           inkscape:export-xdpi="86.839996"
+           inkscape:export-ydpi="86.839996"
+           x="109.99608"
+           y="60.642788"><tspan
+             x="109.99608 149.98842 170.05038"
+             y="60.642788"
+             sodipodi:role="line"
+             id="tspan164"
+             style="stroke-width:0.175405">Art</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

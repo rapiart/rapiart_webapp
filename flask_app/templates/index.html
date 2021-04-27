@@ -1,0 +1,329 @@
+{% extends "base_index.html" %}
+
+{% block content %}
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up"> Crie vídeos e imagens para divulgar seus produtos e promoções de maneira rápida e prática.</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">Não tem conhecimento e nem tempo para investir nisso? Acesse nosso aplicativo e confira as possibilidades!</h2>
+          <div data-aos="fade-up" data-aos-delay="600">
+            <div class="row">
+              <!--div class="col">
+                <div class="text-center text-lg-start">
+                  <a href="{{ url_for('users.login') }}" class="btn-get-started d-inline-flex align-items-center justify-content-center align-self-center">
+                    <span>Começar a usar</span>
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div-->
+              <div class="col">
+                <div class="text-center text-lg-start">
+                  <a href="javascript:void(0)" onclick="setRegisterTela()" class="btn-get-started d-inline-flex align-items-center justify-content-center align-self-center">
+                    <span>Testar Grátis</span>
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <!--img src="{{ url_for('static', filename='imgs/ilustracoes/undraw_work_in_progress.svg') }}" class="img-fluid" alt=""-->
+          <!--img src="{{ url_for('static', filename='landing_page/assets/img/hero-img.png') }}" class="img-fluid" alt=""-->
+          <img src="{{ url_for('static', filename='imgs/our/imagem_2.svg') }}" class="img-fluid img-shadow" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= O que da pra fazer? Section ======= -->
+    <section id="features" class="features">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <p>Crie posts pra divulgar seus produtos</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <!--img src="{{ url_for('static', filename='landing_page/assets/img/features.png') }}" class="img-fluid" alt=""-->
+            <img src="{{ url_for('static', filename='imgs/ilustracoes/un_draw_social_share.svg') }}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
+            <div class="row align-self-center gy-4">
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="200">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-instagram"></i>
+                  <h3>Publicações para Instagram (Posts, IGTV e Stories)</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="300">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-whatsapp"></i>
+                  <h3>Vídeos e imagens para divulgar no Whatsapp</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="400">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-facebook"></i>
+                  <h3>Vídeos e imagens para postar no Facebook</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="500">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-youtube"></i>
+                  <h3>Faça vídeos profissionais para publicar no seu canal no Youtube</h3>
+                </div>
+              </div>
+
+              <div class="col-md-12" data-aos="zoom-out" data-aos-delay="600">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-share-fill"></i>
+                  <h3>Tenha imagens e vídeos profissionais de maneira simples em poucos minutos</h3>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div> <!-- / row -->
+      </div>
+
+    </section><!-- End Features Section -->
+
+    <!-- ======= Como funciona? Section ======= -->
+    <section id="features" class="features">
+
+        <!-- Feature Icons -->
+        <div class="row feature-icons" data-aos="fade-up">
+          <h3>Como funciona?</h3>
+          <div class="row">
+            <div class="col-xl-4 text-center" data-aos="fade-right" data-aos-delay="100">
+              <!--img src="{{ url_for('static', filename='imgs/ilustracoes/undraw_Organize_photos_re.svg') }}" class="img-fluid p-4" alt=""-->
+              <!--img src="{{ url_for('static', filename='landing_page/assets/img/features-3.png') }}" class="img-fluid p-4" alt=""-->
+              <img src="{{ url_for('static', filename='landing_page/assets/img/example.gif') }}" class="img-fluid p-4" alt="">
+            </div>
+
+            <div class="col-xl-8 d-flex content">
+              <div class="row align-self-center gy-4">
+
+                <div class="col-md-6 icon-box" data-aos="fade-up">
+                  <i class="ri-image-add-line"></i>
+                  <div>
+                    <h4>1. Crie uma nova arte</h4>
+                    <p>Você pode separar cada campanha de divulgação em caixas diferentes, que chamanos em nosso app de arte.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <i class="ri-screenshot-2-line"></i>
+                  <div>
+                    <h4>2. Adicione telas</h4>
+                    <p>Dentro de cada arte você pode adicionar diversas telas, onde ficarão as informações de seu produto e os estilos escolhidos por você.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <i class="ri-paint-brush-line"></i>
+                  <div>
+                    <h4>3. Personalize sua tela</h4>
+                    <p>Dentro de cada tela você pode escolher entre várias opções de fundos e modelos para deixar a sua arte do jeito ideal para sua campanha de divulgação.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class="ri-share-line"></i>
+                  <div>
+                    <h4>4. Exporte e compartilhe o resultado</h4>
+                    <p>Depois de deixar a arte do jeito que você quer, com um clique você pode exportar o resultado e compartilhar com seus clientes. É rápido e prático.</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                  <i class="ri-arrow-right-s-line"></i>
+                  <div>
+                    <h4>Quer saber mais?</h4>
+                    <p><strong>Teste nossa plaforma por 30 dias sem pagar nada!</strong></p>
+                    <div class="text-center text-lg-start">
+                      <a href="javascript:void(0)" onclick="setRegisterTela()" class="btn-get-started d-inline-flex align-items-center justify-content-center align-self-center">
+                        <span>Testar Grátis</span>
+                      </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div><!-- End Feature Icons -->
+
+      </div>
+
+    </section><!-- End Features Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    {% include "index_gallery.html" %}
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <p>Seja membro!</p>
+        </header>
+
+        <div class="row gy-3" data-aos="fade-left">
+
+          <div class="row d-flex justify-content-center" data-aos="fade-left">
+            <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+              <div class="box">
+                <h3>Premium</h3>
+                <div class="price" id="price">R$ 59,90<span> / mês<br>Primeiro mês grátis</span></div>
+                <img src="{{url_for('static', filename='imgs/ilustracoes/undraw_powerful_subscribe.svg')}}" />
+                <ul>
+                  <li><i class="ri-loader-line"></i> Criação ilimitada de artes</li>
+                  <li><i class="ri-loader-line"></i> Acesso ilimitado a nossa galeria de fundos animados</li>
+                  <li><i class="ri-loader-line"></i> Acesso a vários modelos de telas</li>
+                  <li><i class="ri-loader-line"></i> Download do resultado em vídeo ou imagem</li>
+                  <li><i class="ri-loader-line"></i> Se não gostar, cancele em um clique, sem precisar falar com ninguém</li>
+                </ul>
+                <a href="{{ url_for('users.login') }}" class="btn-buy" id="btn-plano">Testar grátis por 30 dias*</a><br><br>
+                <span>*Após os 30 dias as cobranças passarão a ser feitas atuomaticamente no cartão de crédito cadastrado.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- End Pricing Section -->
+
+    <!-- ======= Clients Section ======= 
+    <section id="clients" class="clients">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Our Clients</h2>
+          <p>Temporibus omnis officia</p>
+        </header>
+
+        <div class="clients-slider swiper-container">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="{{ url_for('static', filename='landing_page/assets/img/clients/client-1.png') }}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{{ url_for('static', filename='landing_page/assets/img/clients/client-2.png') }}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{{ url_for('static', filename='landing_page/assets/img/clients/client-3.png') }}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{{ url_for('static', filename='landing_page/assets/img/clients/client-4.png') }}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{{ url_for('static', filename='landing_page/assets/img/clients/client-5.png') }}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{{ url_for('static', filename='landing_page/assets/img/clients/client-6.png') }}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{{ url_for('static', filename='landing_page/assets/img/clients/client-7.png') }}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{{ url_for('static', filename='landing_page/assets/img/clients/client-8.png') }}" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+    </section> End Clients Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <p>Fale conosco</p>
+        </header>
+
+        <!--div class="row gy-4">
+          <div class="col-lg-6">
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Endereço</h3>
+                  <p>Barão Geraldo,<br>Campinas, SP</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-telephone"></i>
+                  <h3>Ligue</h3>
+                  <p>
+                    (19) 99999-9999<br>
+                    &nbsp;
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email</h3>
+                  <p>
+                    contato@rapiart.com.br<br>
+                    &nbsp;
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-clock"></i>
+                  <h3>Horário de funcionamento</h3>
+                  <p>Segunda - Sexta<br>9:00 - 17:00</p>
+                </div>
+              </div>
+            </div>
+
+          </div-->
+          <div class="row d-flex justify-content-center" data-aos="fade-left">
+            <div class="col-lg-6">
+              <form action="#" method="post" class="php-email-form" id="contact-form">
+                <div class="row gy-4">
+
+                  <div class="col-md-6">
+                    <input type="text" name="Name" class="form-control" placeholder="Seu Nome" required>
+                  </div>
+
+                  <div class="col-md-6 ">
+                    <input type="email" class="form-control" name="Email" placeholder="Seu Email" required>
+                  </div>
+
+                  <div class="col-md-12">
+                    <input type="text" class="form-control" name="Subject" placeholder="Assunto" required>
+                  </div>
+
+                  <div class="col-md-12">
+                    <textarea class="form-control" name="message" rows="6" placeholder="Mensagem" required></textarea>
+                  </div>
+
+                  <div class="col-md-12 text-center">
+                    <div id="form_loading" class="loading">Carregando...</div>
+                    <div id="form_error" class="error-message">Erro ao enviar mensagem.</div>
+                    <div id="form_sent" class="sent-message">Sua mensagem foi enviada! Retornaremos seu contato assim que possível.</div>
+
+                    <button type="submit" id="contact-form-button">Enviar mensagem</button><br><br>
+                    <span>Se prefirir, envie um email para: <strong>contato@rapiart.com.br</strong></span>
+                  </div>
+
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- End Contact Section -->
+  </main><!-- End #main -->
+{% endblock content %}

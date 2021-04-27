@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% block head %}
+<script>
+    prods_info = {{prods_info|tojson}};
+</script>
+{% endblock head %}
+
+{% block content %}
+<section id="pricing" class="pricing">
+
+  <div class="container" data-aos="fade-up">
+
+    <header class="section-header text-box">
+      <p>Faça sua inscrição</p>
+    </header>
+    {% if current_user.subscription_id and current_user.subscription_id != "No subscription" %}
+      <p class="lead section-header text-box">
+        Olá {{ current_user.username.split(' ')[0] }}, que bom ter você de volta!<br>
+        Clique no botão abaixo e volte a ter acesso total a nossa ferramenta.<br>
+      </p>
+      <div class="row d-flex justify-content-center" data-aos="fade-left">
+        <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+          <div class="box">
+            <h3>{{ prods_info[0].name }}</h3>
+            <div class="price" id="price">{{ prods_info[0].price }}</div>
+            <img src="{{url_for('static', filename='imgs/ilustracoes/undraw_powerful_subscribe.svg')}}" />
+            <ul>
+              <li>Criação ilimitada de artes</li>
+              <li>Download rápido e fácil em vídeo ou imagem</li>
+              <li>Se não gostar, cancele em um clique</li>
+            </ul>
+            <a href="" class="btn-buy" id="btn-plano">Assinar</a>
+          </div>
+        </div>
+      </div>
+    {% else %}
+      <p class="lead section-header text-box">
+        Identificamos que infelizmente você ainda não se inscreveu em nosso plano.<br>
+        Os primeiros 30 dias de uso você não paga nada, e pode cancelar sem custos se não gostar. Legal né?<br>
+        Clique no botão abaixo para completar seu cadastro! :)
+      </p>
+      <div class="row d-flex justify-content-center" data-aos="fade-left">
+        <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+          <div class="box">
+            <h3>{{ prods_info[0].name }}</h3>
+            <div class="price" id="price">{{ prods_info[0].price }}</div>
+            <img src="{{url_for('static', filename='imgs/ilustracoes/undraw_powerful_subscribe.svg')}}" />
+            <ul>
+              <li>Criação ilimitada de artes</li>
+              <li>Acesso a vários modelos de artes prontos</li>
+              <li>Download rápido e fácil do resultado em vídeo ou imagem</li>
+              <li>Se não gostar, cancele em um clique</li>
+            </ul>
+            <button class="btn-buy" id="btn-plano">Testar grátis por 30 dias*</button><br><br>
+            <span>*Após os 30 dias as cobranças passarão a ser feitas atuomaticamente em seu cartão.</span>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+
+</section>
+
+<!--<section id="pricing" class="pricing">
+
+  <div class="container" data-aos="fade-up">
+
+    <header class="section-header text-box">
+      <p>Faça sua inscrição</p>
+    </header>
+    <p class="lead section-header text-box">
+      Identificamos que infelizmente você não está inscrito(a) em nennhum dos nossos planos.<br>
+      Os primeiros 30 dias de uso você não paga nada, e pode cancelar sem custos se não gostar. Legal né?<br>
+      Escolha uma das opções abaixo e venha testar nossa ferramenta! :)
+      {{customer_info['subscription_id']}}
+    </p>
+
+    <div class="row d-flex justify-content-center" data-aos="fade-left">
+      {% for i in range(0,prods_info|length) %}
+        <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+          <div class="box">
+            <h3>{{ prods_info[i].name }}</h3>
+            <div class="price" id="price-{{ i }}">{{ prods_info[i].price }}</div>
+            <img src="{{url_for('static', filename='imgs/ilustracoes/undraw_powerful_subscribe.svg')}}" />
+            <ul>
+              <li>Criação ilimitada de artes</li>
+              <li>Download rápido e fácil em vídeo ou imagem</li>
+              <li>Se não gostar, cancele em um clique</li>
+            </ul>
+            <a href="" class="btn-buy" id="btn-plano-{{ i }}">Assinar</a>
+          </div>
+        </div>
+        {% endfor %}
+    </div>
+
+  </div>
+
+</section>-->
+{% endblock content %}
+
+{% block footer %}
+<script src="{{ url_for('static', filename = 'js/payment.js') }}"></script>
+{% endblock footer %}
